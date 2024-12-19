@@ -1,6 +1,12 @@
 @use 'sass:math';
 
-@import url('https://cdn.jsdelivr.net/gh/leetaewook/gmarket-sans-dynamic-subset/GmarketSans.css');
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body, html {
   margin: 0;
@@ -40,10 +46,96 @@ p {
   font-family: 'Pretendard', 'Inter', sans-serif;
 }
 
+.kr-h1 {}
+
+.kr-h2 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.kr-h3 {
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: math.div(25, 14 * 16) * 1em;
+}
+
 .kr-h4 {
-  font-family: 'Gmarket Sans', sans-serif;
+  font-family: 'GmarketSansMedium', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: math.div(25, 14 * 16) * 1em;
+}
+
+.kr-bold {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.kr-body {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+}
+
+
+.mt18 {
+  margin-top: 18px !important;
+}
+
+.mt26 {
+  margin-top: 26px !important;
+}
+
+.mt32 {
+  margin-top: 32px !important;
+}
+
+.mt88 {
+  margin-top: 88px !important;
+}
+
+.mt100 {
+  margin-top: 100px !important;
+}
+
+.mt120 {
+  margin-top: 120px !important;
+}
+
+.mt160 {
+  margin-top: 160px !important;
+}
+
+.mb26 {
+  margin-bottom: 26px !important;
+}
+
+.mb32 {
+  margin-bottom: 32px !important;
+}
+
+.mb88 {
+  margin-bottom: 88px !important;
+}
+
+.mb100 {
+  margin-bottom: 100px !important;
+}
+
+.mb120 {
+  margin-bottom: 120px !important;
+}
+
+.mb160 {
+  margin-bottom: 160px !important;
 }

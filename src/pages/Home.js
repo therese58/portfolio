@@ -25,10 +25,10 @@ function Home() {
         mousewheel={true}
         modules={[Pagination, Mousewheel]}
       >
-        <SwiperSlide><Main /></SwiperSlide>
-        <SwiperSlide><Profile /></SwiperSlide>
-        <SwiperSlide><Project /></SwiperSlide>
-        <SwiperSlide><Contact /></SwiperSlide>
+        <SwiperSlide><Main className=''></Main></SwiperSlide>
+        <SwiperSlide><Profile className=''></Profile></SwiperSlide>
+        <SwiperSlide><Project className=''></Project></SwiperSlide>
+        <SwiperSlide><Contact className=''></Contact></SwiperSlide>
       </Swiper>
     </div>
   );
