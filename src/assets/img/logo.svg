@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.13 414.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="_Ñëîé_1" data-name="Ñëîé 1">
+    <g>
+      <line class="cls-1" x1="148.57" y1="2.5" x2="148.57" y2="412.46"/>
+      <line class="cls-1" x1="2.5" y1="207.48" x2="294.63" y2="207.48"/>
+      <line class="cls-1" x1="74.41" y1="133.32" x2="222.72" y2="281.64"/>
+      <line class="cls-1" x1="222.72" y1="133.32" x2="74.41" y2="281.64"/>
+    </g>
+  </g>
+</svg>
