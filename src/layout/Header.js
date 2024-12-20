@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import logo from "../assets/img/logo.svg";
+import logo from '/img/logo.svg';
 
 const Navigation = () => {
   const menuItems = ["Home", "Profile", "Project", "Contact"];
@@ -11,7 +11,7 @@ const Navigation = () => {
       <div className="mw d-flex align-items-center justify-content-between position-relative">
         {/* SVG */}
         <img
-          src={logo}
+          src="/img/logo.svg"
           alt="logo"
           className="flex-shrink-0 mt-3"
           style={{ width: "40px", height: "55px" }}
