@@ -5,7 +5,7 @@ import { Pagination, Mousewheel } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import styles from './home.module.scss';
+import styles from './Home.module.scss';
 
 // 페이지 컴포넌트
 import Main from './Main.js';

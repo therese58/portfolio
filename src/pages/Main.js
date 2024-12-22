@@ -1,10 +1,10 @@
-import React from 'react';
-import mainImage from '/img/main_img.png'; 
+import React from "react";
+import styles from './Main.module.scss'; // 새로운 모듈 CSS 추가
 
 const Main = () => {
   return (
-    <div className="image-container d-flex justify-content-center align-items-center w-100">
-      <img src={mainImage} alt="Main" className="centered-image" />
+    <div className={styles.imageContainer}>
+      <img src="/img/main_img.png" alt="Main Image" className={styles.mainImage} />
     </div>
   );
 };

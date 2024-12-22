@@ -25,9 +25,9 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home></Home>}></Route>
-            <Route path="/profile" element={<Profile></Profile>}></Route>
-            <Route path="/project" element={<Project></Project>}></Route>
-            <Route path="/contact" element={<Contact></Contact>}></Route>
+            <Route path="/profile" element={<section id="profile"><Profile /></section>} />
+            <Route path="/project" element={<section id="project"><Project /></section>} />
+            <Route path="/contact" element={<section id="contact"><Contact /></section>} />
           </Routes>
         </main>
 

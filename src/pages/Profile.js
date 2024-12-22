@@ -19,10 +19,12 @@ export default function Profile() {
         {/* 자기소개 */}
         <div className="d-flex flex-column align-items-start gap-3 position-relative">
           <div className="d-flex flex-column align-items-end mb32 position-relative">
-            <div
+          <img
+              src="/img/profile.jpg"
+              alt="Profile"
               className="bg-secondary rounded-start rounded-end mt-4 mb-3"
-              style={{ width: "300px", height: "400px" }}
-            ></div>
+              style={{ width: "300px", height: "400px", objectFit: "cover" }}
+            />
             <p className="kr-body">Kwon Chae Ryeoung</p>
             <h2 className="kr-h2 position-absolute">권채령</h2>
           </div>
@@ -30,7 +32,7 @@ export default function Profile() {
           <div className="w-auto d-flex flex-column align-items-start gap-3">
             <p className="kr-body">1993.11.19</p>
             <p className="kr-body">010.5006.4363</p>
-            <p className="kr-body">thereseluce93@gmail.com</p>
+            <p className="kr-body">imteresa93@gmail.com</p>
           </div>
         </div>
 
