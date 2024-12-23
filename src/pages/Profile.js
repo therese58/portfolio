@@ -26,10 +26,16 @@ export default function Profile() {
               style={{ width: "300px", height: "400px", objectFit: "cover" }}
             />
             <p className="kr-body">Kwon Chae Ryeoung</p>
-            <h2 className="kr-h2 position-absolute">권채령</h2>
+            <h2
+              className="kr-h2 position-absolute"
+              style={{
+                bottom: "50px",
+                right: "10px",
+              }}
+            >권채령</h2>
           </div>
 
-          <div className="w-auto d-flex flex-column align-items-start gap-3">
+          <div className="w-auto d-flex flex-column align-items-start gap-2">
             <p className="kr-body">1993.11.19</p>
             <p className="kr-body">010.5006.4363</p>
             <p className="kr-body">imteresa93@gmail.com</p>
