@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
-import styles from "./project.module.scss";
+import styles from "./Project.module.scss";
 
 export default function Project() {
   const slidesRef = useRef([]);

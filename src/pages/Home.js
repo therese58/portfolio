@@ -21,6 +21,9 @@ function Home() {
         direction="vertical"
         pagination={{
           clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className} ${styles.customBullet}"></span>`;
+          },
         }}
         mousewheel={true}
         modules={[Pagination, Mousewheel]}

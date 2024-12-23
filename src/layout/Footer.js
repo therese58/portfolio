@@ -1,49 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useSwiper } from "swiper/react";
+import "swiper/css";
+
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
-  const [currentSection, setCurrentSection] = useState("home");
+  const swiper = useSwiper();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY; // 현재 스크롤 위치
-      const windowHeight = window.innerHeight; // 뷰포트 높이
-      const sections = document.querySelectorAll("section"); // 모든 섹션 가져오기
-
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop; // 섹션의 상단 위치
-        const sectionHeight = section.offsetHeight; // 섹션의 높이
-
-        if (
-          scrollY + windowHeight / 2 >= sectionTop && // 스크롤 중간이 섹션 시작보다 크거나 같고
-          scrollY + windowHeight / 2 < sectionTop + sectionHeight // 섹션 끝보다 작으면
-        ) {
-          setCurrentSection(section.getAttribute("id")); // 현재 섹션 ID 업데이트
-        }
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll); // 스크롤 이벤트 리스너 추가
-    return () => {
-      window.removeEventListener("scroll", handleScroll); // 컴포넌트 언마운트 시 이벤트 제거
-    };
-  }, []);
-
-  const getFooterContent = () => {
-    switch (currentSection) {
-      case "home":
-        return <p>메인 페이지 Footer입니다.</p>;
-      case "profile":
-        return <p>프로필 페이지 Footer입니다.</p>;
-      case "project":
-        return <p>프로젝트 페이지 Footer입니다.</p>;
-      case "contact":
-        return <p>연락처 페이지 Footer입니다.</p>;
-      default:
-        return <p>기본 Footer입니다.</p>;
+  const handleNextPage = () => {
+    if (swiper && swiper.isEnd === false) {
+      swiper.slideNext();
     }
   };
 
-  return <footer>{getFooterContent()}</footer>;
+  const handlePreviousPage = () => {
+    if (swiper && swiper.isBeginning === false) {
+      swiper.slidePrev();
+    }
+  };
+
+  return (
+    <footer className="fixed-bottom">
+      <div className="mw d-flex justify-content-between align-items-center position-relative mb-5 text-muted">
+        <div className="kr-h4">KWON CHAE RYEOUNG</div>
+        <div className="kr-h4">
+          Page {swiper ? swiper.activeIndex + 1 : 1}
+        </div>
+        <div className="kr-h4">2024 Portfolio</div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

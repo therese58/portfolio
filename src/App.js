@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './layout/Header';
 import Footer from './layout/Footer.js';
-import Sidebar from './layout/Sidebar';
+
+import Cursor from './components/cursor.js';
 
 // 페이지 컴포넌트
 import Home from './pages/Home.js';
@@ -18,8 +19,9 @@ function App() {
         {/* 헤더 */}
         <Header></Header>
         
+        <Cursor></Cursor>
         {/* 사이드바 */}
-        <Sidebar></Sidebar>
+        {/* <Sidebar></Sidebar> */}
 
         {/* 라우팅 영역 */}
         <main>

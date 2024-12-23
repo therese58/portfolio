@@ -1,3 +1,21 @@
+:global {
+  .swiper-pagination-bullet {
+    background-color: rgba($color: #ffffff, $alpha: 0) !important;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #2e2e2e ;
+    border-radius: 50%;
+    margin: 0 30px 10px 0 !important;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #2e2e2e !important;
+    opacity: 1;
+  }
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -13,9 +31,5 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-  }
-
-  .swiper-pagination {
-    color: #000 !important; // 페이지네이션 색상
   }
 }
